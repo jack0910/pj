@@ -1,0 +1,145 @@
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #7fc6ce;
+    font-family: Constantia, sans-serif;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.div-left {
+    float: left;
+}
+
+.div-left a {
+    color: cadetblue;
+    padding: 30px;
+}
+
+.div-left .strong {
+    color: antiquewhite;
+}
+
+.div-left a:hover {
+    color: cyan;
+}
+
+.div-right {
+    position: sticky;
+    left: 80%;
+    vertical-align: middle;
+    margin-right: 5%;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.div-right:hover .dropdown-content {
+    display: block;
+}
+
+.title {
+    background-color: #274e5f;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.content ul {
+    margin: 3%;
+    border-radius: 4px;
+    border: 1px gray solid;
+}
+
+li {
+    padding: 10px;
+    border-top: gray 1px solid;
+    list-style-position: inside;
+}
+
+.no-line,.title{
+    border-top: none;
+}
+
+.li-a {
+    list-style-image: url("../img/use/a.png");
+    list-style-type: square;
+}
+
+.li-b {
+    list-style-image: url("../img/use/b.png");
+    list-style-type: square;
+}
+
+.li-c {
+    list-style-image: url("../img/use/c.png");
+    list-style-type: square;
+}
+
+.li-d {
+    list-style-image: url("../img/use/d.png");
+    list-style-type: square;
+}
+
+
+.dropdown-content a {
+    color: black;
+}
+
+.dropdown-content a:hover {
+    color: #a6ddf8;
+}
+
+.my-account {
+    color: cadetblue;
+}
+
+#copyrightRow {
+    text-align: center;
+}
+
+.content input,label,textarea {
+    display: block;
+    margin-top: 2%;
+    width: 95%;
+    border-radius: 4px;
+    border: none;
+}
+
+.content input[type="button"] {
+    width: 20%;
+    background-color: rgb(112, 146, 190);
+    height: 2em;
+}
+
+input[type="text"] {
+    height: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+.content p {
+    margin: 10% 0 10% 0;
+}
+
+input[value="Upload"] {
+    margin: 0 45% 0 45%;
+}
+
+input[type="file"] {
+    position: relative;
+    bottom: 25px;
+    opacity: 0;
+}

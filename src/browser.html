@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>趣图</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/browser.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav id="nav">
+    <div class="div-left">
+        <a href="home.html">Home</a>
+        <a href="browser.html" class="strong">Browser</a>
+        <a href="search.html">Search</a>
+    </div>
+    <div class="div-right">
+        <span class="my-account">My account </span>
+        <div class="dropdown-content">
+            <ul>
+                <li class="li-a"><a href="upload.html">Upload</a></li>
+                <li class="li-b"><a href="my_photo.html">My Photo</a></li>
+                <li class="li-c"><a href="favor.html">My Favorite</a></li>
+                <li class="li-d"><a href="index.html">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="content">
+    <div class="content-left">
+        <div class="title-search">
+            <ul>
+                <li class="title">Search by Title</li>
+                <li class="no-line">
+                    <form name="title-search" method="post">
+                        <input type="text" name="title" id="title" value="">
+                        <label for="title">
+                            <button onclick="alert('此功能待完善')"><img src="img/use/search.png" alt="11111"></button>
+                        </label>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-content">
+            <ul>
+                <li class="title">Hot Content</li>
+                <li><a href="" onclick="alert('此功能待完善')">Scenery</a></li>
+                <li><a href="" onclick="alert('此功能待完善')">City</a></li>
+                <li><a href="" onclick="alert('此功能待完善')">People</a></li>
+                <li><a href="" onclick="alert('此功能待完善')">Animal</a></li>
+                <li><a href="" onclick="alert('此功能待完善')">Building</a></li>
+                <li class="no-line"><a href="" onclick="alert('此功能待完善')">Wonder</a></li>
+            </ul>
+        </div>
+        <div class="hot-country">
+            <ul>
+                <li class="title">Hot Country</li>
+                <li><a href="" onclick="alert('此功能待完善')">China</a></li>
+                <li><a href="" onclick="alert('此功能待完善')">Italy</a></li>
+                <li><a href="" onclick="alert('此功能待完善')">Japan</a></li>
+                <li class="no-line"><a href="" onclick="alert('此功能待完善')">America</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="filter">
+        <ul>
+            <li class="title">Filter</li>
+            <li>
+                <form name="filter" method="post">
+                    <label>
+                        <select>
+                            <option class="not-option" value="">Filter by Content</option>
+                            <option value="0">Spring</option>
+                            <option value="1">Summer</option>
+                            <option value="2">Fall</option>
+                            <option value="3">Winter</option>
+                        </select>
+                    </label><!--二级联动-->
+                    <label for="one"></label>
+                    <select id="one" onchange="func(this.value)">
+                        <option class="not-option" value="">Filter by Country</option>
+                        <option value="0">China</option>
+                        <option value="1">Japan</option>
+                        <option value="2">Italy</option>
+                        <option value="3">America</option>
+                    </select>
+                    <label for="two"></label>
+                    <select id="two">
+                        <option class="not-option" value="">Filter by City</option>
+                    </select>
+                    <input class="filter-submit" type="submit" value="Filter" onclick="alert('此功能待完善')">
+                </form>
+            </li>
+            <li class="no-line">
+                <table>
+                    <tr>
+                        <td><a href="details.html"><img src="img/square/square-medium/222222.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/222223.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5855174537.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5855191275.jpg" alt="11"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="details.html"><img src="img/square/square-medium/5855209453.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5855213165.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5855221959.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5855729828.jpg" alt="11"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="details.html"><img src="img/square/square-medium/5855735700.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5855752464.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5855774224.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5856616479.jpg" alt="11"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="details.html"><img src="img/square/square-medium/5856654945.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5856658791.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5856697109.jpg" alt="11"></a></td>
+                        <td><a href="details.html"><img src="img/square/square-medium/5857298322.jpg" alt="11"></a></td>
+                    </tr>
+                </table>
+            </li>
+            <li class="no-line"><p><a href="">《</a> <a href="">1</a> <a href="">2</a> <a href="">3</a> <a href="">4</a> <a href="">5</a> <a href="">》</a></p></li>
+        </ul>
+    </div>
+</div>
+<footer>
+    <div id="copyrightRow">
+        <p class="copyright">Copyright © 2019-2021 Web fundamental. All Rights Reserved. 备案号：19302010040</p>
+    </div>
+</footer>
+</body>
+<script>
+    const two = document.getElementById('two');
+    city = [];
+    city[0] = ['Shanghai','Kunming','Beijing','Yantai'];
+    city[1] = ['Tokyo', 'Osaka', 'Kamakura'];
+    city[2] = ['Roma','Milan','Venice','Florence'];
+    city[3] = ['New York','San Francisco', 'Washington'];
+    function func(m){
+        two.length = 1;
+        for (let i = 0; i < city[m].length; i++) {
+            const op = new Option(city[m][i]);
+            two.add(op);
+        }
+    }
+</script>
+</html>

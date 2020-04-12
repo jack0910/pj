@@ -1,0 +1,154 @@
+body {
+     padding-left: 20%;
+     padding-right: 20%;
+     background-color: #7fc6ce;
+     font-family: Constantia, sans-serif;
+ }
+
+nav {
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.div-left {
+    float: left;
+}
+
+.div-left a {
+    color: cadetblue;
+    padding: 30px;
+}
+
+.div-left .strong {
+    color: antiquewhite;
+}
+
+.div-left a:hover {
+    color: cyan;
+}
+
+.div-right {
+    position: sticky;
+    left: 80%;
+    vertical-align: middle;
+    margin-right: 5%;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.div-right:hover .dropdown-content {
+    display: block;
+}
+
+li {
+    padding: 10px;
+    border-top: gray 1px solid;
+    list-style-position: inside;
+}
+
+.no-line,.title{
+    border-top: none;
+}
+
+
+.li-a {
+    list-style-image: url("../img/use/a.png");
+    list-style-type: square;
+}
+
+.li-b {
+    list-style-image: url("../img/use/b.png");
+    list-style-type: square;
+}
+
+.li-c {
+    list-style-image: url("../img/use/c.png");
+    list-style-type: square;
+}
+
+.li-d {
+    list-style-image: url("../img/use/d.png");
+    list-style-type: square;
+}
+
+
+.dropdown-content a {
+    color: black;
+}
+
+.dropdown-content a:hover {
+    color: #a6ddf8;
+}
+
+.my-account {
+    color: cadetblue;
+}
+
+#copyrightRow {
+    text-align: center;
+}
+
+.my-photos {
+    margin: 3%;
+    border: gray 1px solid;
+    border-radius: 4px;
+}
+
+.title {
+    background-color: #274e5f;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.my-photos .no-line {
+    text-align: center;
+}
+.my-photos p a {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+.small {
+    font-size: small;
+}
+
+.my-photos .photo {
+    vertical-align: center;
+}
+
+.photo div {
+    width: 75%;
+    margin-left: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.photo img {
+    width: 20%;
+    height: auto;
+}
+
+input[value="Modify"] {
+    background-color: #7092be;
+    border-radius: 4px;
+    border: none;
+    color: antiquewhite;
+    height: 26px;
+}
+
+input[value="Delete"] {
+    background-color: #7092be;
+    border-radius: 4px;
+    border: none;
+    color: #ff7f82;
+    height: 26px;
+}
