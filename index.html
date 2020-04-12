@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>趣图</title>
+    <link href="src/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="src/css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="logo">
+    <img src="src/img/use/logo.png" alt="21">
+</div>
+<p>Sign in for Fisher</p>
+<form name="login" method="post" class="content">
+    <label for="name">Username/E-mail</label>
+    <input type="text" name="name" id="name" value="">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" minlength="9" pattern="^[A-Za-z0-9]+$" required>
+    <input class="submit" type="submit" value="Sign in" onclick="window.location.href = 'src/home.html'"><!--提交按钮并跳转-->
+</form>
+<p>New to Fisher? <a href="src/register.html">Create a new account?</a></p>
+<footer>
+    <div id="copyrightRow">
+        <p class="copyright">Copyright © 2019-2021 Web fundamental. All Rights Reserved. 备案号：19302010040</p>
+    </div>
+</footer>
+</body>
+</html>
