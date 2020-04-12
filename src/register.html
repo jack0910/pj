@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>趣图</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/register.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="logo">
+    <img src="img/use/logo.png" alt="21">
+</div>
+<p>Sign up for Fisher</p>
+<form name="login" method="post" class="content">
+    <label for="name">Username:</label>
+    <input type="text" name="name" id="name" value="" pattern="^\w+$">
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" minlength="9" pattern="^[A-Za-z0-9]+$" required>
+    <label for="repassword">Confirm Your Password:</label>
+    <input type="password" name="repassword" id="repassword" minlength="9" pattern="^[A-Za-z0-9]+$" required>
+    <input class="button" type="submit" value="Sign up" onclick="window.location.href = '../index.html'">
+</form>
+<footer>
+    <div id="copyrightRow">
+        <p class="copyright">Copyright © 2019-2021 Web fundamental. All Rights Reserved. 备案号：19302010040</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>趣图</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/upload.css" rel="stylesheet" type="text/css">
+    <script lang="javascript" type="text/javascript"><!--实现点击提醒框确认再发生跳转的功能-->
+        function f() {
+            alert("已提交，点击确认查看您的照片");
+            window.location.href = "my_photo.html";
+        }
+    </script>
+    <script></script>
+</head>
+<body>
+<nav id="nav">
+    <div class="div-left">
+        <a href="home.html">Home</a>
+        <a href="browser.html">Browser</a>
+        <a href="search.html">Search</a>
+    </div>
+    <div class="div-right">
+        <span class="my-account">My account </span>
+        <div class="dropdown-content">
+            <ul>
+                <li class="li-a"><a href="upload.html">Upload</a></li>
+                <li class="li-b"><a href="my_photo.html">My Photo</a></li>
+                <li class="li-c"><a href="favor.html">My Favorite</a></li>
+                <li class="li-d"><a href="../index.html">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="content">
+    <ul>
+        <li class="title">Upload</li>
+        <li>
+            <form name="submit-photo-info" method="post">
+                <p class="center">未上传图片</p>
+                <input class="center" type="button" value="Upload">
+                <input class="center" type="file" value="Upload" id="chooseImage">
+                <label for="title">图片标题:</label>
+                <input type="text" id="title">
+                <label for="description">图片描述:</label>
+                <textarea id="description" rows="6"></textarea>
+                <label for="country">拍摄国家:</label>
+                <input type="text" id="country">
+                <label for="city">拍摄城市</label>
+                <input type="text" id="city">
+                <input type="button" value="Submit" onclick="f()">
+            </form>
+        </li>
+    </ul>
+</div>
+<footer>
+    <div id="copyrightRow">
+        <p class="copyright">Copyright © 2019-2021 Web fundamental. All Rights Reserved. 备案号：19302010040</p>
+    </div>
+</footer>
+</body>
+</html>

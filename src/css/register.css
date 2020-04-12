@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(29,51,65);
+    font-family: Constantia, sans-serif;
+}
+
+.logo,p{
+    text-align: center;
+}
+
+.logo {
+    margin-top: 3%;
+}
+
+.logo img {
+    height: 15%;
+    width: auto;
+}
+
+label,input {
+    color: #274e5f;
+    display: block;
+    margin: 10px;
+}
+
+input {
+    border: none;
+    width: 90%;
+    height: 27px;
+    border-radius: 5px;
+}
+
+.button {
+    margin-top: 10%;
+    background-color: #272727;
+}
+
+form {
+    background-color: rgba(20, 20, 20, 0.88);
+    margin-left: 40%;
+    margin-right: 40%;
+    border: #272727 1px solid;
+    border-radius: 10px;
+}
